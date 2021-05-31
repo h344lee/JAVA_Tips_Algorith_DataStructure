@@ -26,4 +26,4 @@
       }
     }
 
-## DataStructure
+## Data Structure
