@@ -2,11 +2,17 @@
 
 ## Tips
 
+
+### Array
+    Arrays.sort(arrayVariable);
+    System.arraycopy(originalArrayVariable, startIndex, destArrayVariable, startIndex, copyLength);
+
 ### String
     String.parseInt(decimalString);
     String.parseInt(binaryString,2);
-    String.substring(startIndex, endIndex+1);
+    String.substring(startIndex, endIndex+1);  // the second parameter is the starting point of the remaining string
     String.charAt(stringIndex);
+    StringVariable.split(" ");    // it requires double quotes
 
 ### Integer
     Integer.toBinaryString(binaryInteger);
@@ -14,8 +20,6 @@
 ## Algorithm
 
 ### Binary Search
-
- 
     while (low <= high) {
       int mid = (low + high) / 2;
       if ( answer condition) return mid;
