@@ -30,25 +30,34 @@
 
 ### Collection
 
-#### List
+#### List Interface
 Data can be duplicated, Order 
 - LinkedList
 - Stack
 - Vector
 - ArrayList
 
-#### Set 
+#### Set Interface
 Data cannot be duplicated, Order-less
 - HashSet
 - SortedSet (TreeSet)
 
-### MAP
+#### MAP Interface
 each entry consists of (key, value) pair
-#### Hashtable
-#### HashMap
-#### SortedMap (TreeMap)
+- Hashtable
+- HashMap
+- SortedMap (TreeMap)
 
-#### Queue
+                TreeMap<Integer, Integer> map = new TreeMap<>();   // automatically ordered by red-black tree 
+                map.put(arr[size-1], size-1);            // put(key_variable , value_variable)
+                for (int i = size-2; i >= 0; i--) {
+                    Map.Entry high_key_value_pair = map.ceilingEntry(arr[i]);  // get an entry which has equal or the smallest large value of arr[i]
+                    Map.Entry low_key_value_pair = map.floorEntry(arr[i]);     // variable is Map.Entry type
+                    if (high_key_value_pair != null) higher[i] = lower[(int)high_key_value_pair.getValue()];   // getValue() method 
+                    if (low_key_value_pair != null) lower[i] = higher[(int)low_key_value_pair.getValue()]; 
+                }
+
+#### Queue Interface
 - LinkedList
 - PriorityQueue
 
