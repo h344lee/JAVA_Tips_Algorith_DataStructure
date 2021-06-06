@@ -27,3 +27,30 @@
     }
 
 ## Data Structure
+
+### Collection
+
+#### List
+Data can be duplicated, Order 
+- LinkedList
+- Stack
+- Vector
+- ArrayList
+
+#### Set 
+Data cannot be duplicated, Order-less
+- HashSet
+- SortedSet (TreeSet)
+
+### MAP
+each entry consists of (key, value) pair
+#### Hashtable
+#### HashMap
+#### SortedMap (TreeMap)
+
+#### Queue
+- LinkedList
+- PriorityQueue
+
+
+
