@@ -2,9 +2,13 @@
 
 ## Tips
 
+### Collections
+    Collections.sort(arrayVariable);    // Merge Sort : stable, O(nlogn) guaranteed, double memory space
+    Collections.sort(arrayVariable, Collections.reverseOrder())
 
-### Array
-    Arrays.sort(arrayVariable);
+### Arrays
+    Arrays.sort(arrayVariable);    // Double Pivot Quick Sort : unstable, O(n^2) ~ O(nlogn), in-place sorting
+    Arrays.sort(arrayVariable, Collections.reverseOrder())
     System.arraycopy(originalArrayVariable, startIndex, destArrayVariable, startIndex, copyLength);
 
 ### String
