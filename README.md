@@ -53,22 +53,22 @@ Data cannot be duplicated, Order-less
 #### MAP Interface
 each entry consists of (key, value) pair
 - Hashtable
-- HashMap (put, get, remove, containsKey)
+- HashMap (put, get, remove, containsKey, containsValue)
 
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
-        HashMap<Integer, Integer> valIndex = new HashMap<>();
+      HashMap<Integer, Integer> hashMap = new HashMap<>();
+      HashMap<Integer, Integer> valIndex = new HashMap<>();
 
-        for (int i = 0 ; i < nums.length; i++){
-            if(hashMap.containsKey(nums[i])) {
-                hashMap.put(nums[i], hashMap.get(nums[i])+1);
-            } else {
-                hashMap.put(nums[i], 1);
-            }
-            valIndex.put(nums[i], i);
-        }
-        // hashMap.remove(1);  // remove by key
+      for (int i = 0 ; i < nums.length; i++){
+          if(hashMap.containsKey(nums[i])) {
+              hashMap.put(nums[i], hashMap.get(nums[i])+1);
+          } else {
+              hashMap.put(nums[i], 1);
+          }
+          valIndex.put(nums[i], i);
+      }
+      // hashMap.remove(1);  // remove by key
 
-- TreeMap (put, getValue, ceilingEntry, floorEntry)
+- TreeMap (put, getKey, getValue, containsKey, containsValue, ceilingEntry, floorEntry)
 
       TreeMap<Integer, Integer> map = new TreeMap<>();   // automatically ordered by red-black tree 
       map.put(arr[size-1], size-1);            // put(key_variable , value_variable)
