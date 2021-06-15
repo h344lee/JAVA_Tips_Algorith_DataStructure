@@ -51,7 +51,7 @@ Data cannot be duplicated, Order-less
 - SortedSet (TreeSet)
 
 #### MAP Interface
-each entry consists of (key, value) pair
+Each entry consists of (key, value) pair
 - Hashtable
 - HashMap (put, get, remove, containsKey, containsValue)
 
