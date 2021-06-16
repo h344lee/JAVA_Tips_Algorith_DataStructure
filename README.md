@@ -113,7 +113,37 @@ An array of lists is used. The size of the array is equal to the number of verti
 
 ### BFS
 
+Queue + While
+
+    Queue<Integer> q = new LinkedList<Integer>();
+    check[1] = true; 
+    q.add(1);
+
+    while (!q.empty()) {
+      int x = q.poll();   // peek & remove
+      for (int i = 0; i < a[x].size(); i++) {
+        int y = a[x][i];
+        if (check[y] == false) {
+          check[y] = true;
+          q.add(y);
+         }
+      }
+    }
+
 ### DFS
+
+Stack is replaced by recursive function
+
+    void dfs (int x) {
+      check[x] = true;
+      for (int i = 0; i < a[x].size(); i++) {
+        int y = a[x][i];
+        if (check[y] == false) {
+        dfs(y);
+        }
+      }
+    }
+
 
 ### Dijkstra
 
