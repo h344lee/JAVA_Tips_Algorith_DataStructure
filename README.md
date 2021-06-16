@@ -25,6 +25,16 @@
 
 ### Bubble Sort
 
+    // x <-> y Swap
+    // x = x + y - (y = x)
+
+    int[] inputNum = {4,3,5,1,5,6,8,0,2,1};
+    for (int i = 0 ; i < inputNum.length; i++){
+        for (int j = 0; j+1 < inputNum.length-i; j++){
+            if (inputNum[j+1] < inputNum[j]) inputNum[j+1] = inputNum[j+1] + inputNum[j] - (inputNum[j] = inputNum[j+1]);
+        }
+    }
+
 ### Quick Sort
 
 ### Merge Sort
