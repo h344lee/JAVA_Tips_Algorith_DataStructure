@@ -23,6 +23,12 @@
 
 ## Algorithm
 
+### Bubble Sort
+
+### Quick Sort
+
+### Merge Sort
+
 ### Binary Search
     while (low <= high) {
       int mid = (low + high) / 2;
